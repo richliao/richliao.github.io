@@ -1,10 +1,10 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Richard's deep learning blog
+email:       richardliao@example.com
+author:      Richard Liao
+description: "Collections of ideas of deep learning application."
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "https://richliao.github.io/"
 date_format: "%b %-d, %Y"
 
 # Google services
@@ -29,7 +29,7 @@ enable_anchorjs: false
 # Facebook Page integration
 # (for instant articles and other stuff)
 fb_page: false
-fb_page_id: 
+fb_page_id:
 
 # Disqus post comments
 # (leave blank to disable Disqus)
@@ -42,14 +42,14 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
+github_username: richliao
 bitbucket_username:
 stackoverflow_id:
-twitter_username:
+twitter_username: richard_liao
 skype_username:
 steam_nickname:
 google_plus_id:
-linkedin_username:
+linkedin_username: richard-zhi-liao-17aaa94
 angellist_username:
 medium_id:
 bitcoin_url:
@@ -60,9 +60,9 @@ flattr_button:
 show_sharing_icons: false
 # Change to 'true' to enable individual icons
 share_facebook: false
-share_twitter: false
+share_twitter: true
 share_googleplus: false
-share_linkedin: false
+share_linkedin: true
 share_digg: false
 share_tumblr: false
 share_reddit: false
