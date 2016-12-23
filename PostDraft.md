@@ -1,4 +1,3 @@
-Text classification is a very classical problem. Problems to solve are always given a variable length of text bodies to predict either category or 
-In the following series of posts, I will try to compare a few different approaches, particulary to implement the paper "Hierachical document classification"...
+Text classification is a very classical problem. The goal is to classify documents into a fixed number of predefined categories, given a variable length of text bodies. It is widely use in sentimental analysis (IMDB, YELP reviews classification), stock market prediction, to GOOGLE's smart reply. This is a very active research area in academia. In the following discussion, I will try to present a few different approaches and compare their performances. Utimately, the goal for me is to implement the paper "Hierachical document classification". Given the limitation of data set I have, I will limite the excerise to Kaggle's IMDB dataset, and implementions are all based on Keras. 
 
-In the first post, I will show how to implement Kim's paper. There are many implementations out there so 
+In the first series post,  
