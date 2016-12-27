@@ -5,7 +5,5 @@ permalink: /about/
 tags: about
 ---
 
-Senior director @ Finra, passion about financial engineering, algorithmic trading and data science subjects in deep learning, NLP and social network modeling. My LinkedIn[Richard Liao](https://www.linkedin.com/in/richard-zhi-liao-17aaa94) and my Twitter account is
-([@richard_liao](https://twitter.com/richard_liao)).
-
-Checkout [my Github repository](https://github.com/richliao/)
+Living in New York, NY, I'm a Senior director @ Finra, an US finance regulator. I'm passioned about financial engineering, algorithmic trading and data science subjects in the area of deep learning, NLP and social network modeling. You can reach out to me at LinkedIn[Richard Liao](https://www.linkedin.com/in/richard-zhi-liao-17aaa94) and Twitter at
+([@richard_liao](https://twitter.com/richard_liao)). Please also checkout [my Github repository](https://github.com/richliao/)
