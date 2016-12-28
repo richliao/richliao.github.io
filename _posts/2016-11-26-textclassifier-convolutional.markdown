@@ -1,9 +1,9 @@
 ---
 layout: post
 comments: true
-title: "Text Classification, Part I - convolutional"
+title: "Text Classification, Part I - Convolutional Networks"
 date: "2016-11-26 16:35:30 -0500"
-categories: jekyll disqus
+categories: supervised classification
 ---
 
 Text classification is a very classical problem. The goal is to classify documents into a fixed number of predefined categories, given a variable length of text bodies. It is widely use in sentimental analysis (IMDB, YELP reviews classification), stock market sentimental analysis, to GOOGLE's smart email reply. This is a very active research area both in academia and industry. In the following series of posts, I will try to present a few different approaches and compare their performances. Ultimately, the goal for me is to implement the paper [Hierarchical Attention Networks for Document Classification](https://www.cs.cmu.edu/~diyiy/docs/naacl16.pdf).
@@ -140,7 +140,7 @@ Epoch 10/10
 
 The accuracy we can achieve is **89%**
 
-### Complex Convolutional neural network ###
+### Deeper Convolutional neural network ###
 
 In Yoon Kim's paper, multiple filters have been applied. This can be easily implemented using Keras Merge Layer.
 
