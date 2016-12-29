@@ -114,7 +114,7 @@ class AttLayer(Layer):
         return (input_shape[0], input_shape[-1])
 {% endhighlight %}
 
-Then following code is pretty much the same as the previous one except I will add an attention layer on top of LSTM Output
+Then following code is pretty much the same as the previous one except I will add an attention layer on top of GRU Output
 
 {% highlight python %}
 embedding_matrix = np.random.random((len(word_index) + 1, EMBEDDING_DIM))

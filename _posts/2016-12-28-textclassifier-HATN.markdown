@@ -12,7 +12,7 @@ Please note that all exercises are based on Kaggle's [IMDB dataset](https://www.
 
 ## Text classification using Hierarchical LSTM ##
 
-Before fully implement Hierarchical attention network, I want to build a Hierarchical LSTM network as a base line. To have it implemented, I have to construct the data input as 3D other than 2D in previous two posts. So the input tensor would be [# of reviews, #sentences, #words in each sentence].
+Before fully implement Hierarchical attention network, I want to build a Hierarchical LSTM network as a base line. To have it implemented, I have to construct the data input as 3D other than 2D in previous two posts. So the input tensor would be [# of reviews each batch, # of sentences, # of words in each sentence].
 
 {% highlight python %}
 tokenizer = Tokenizer(nb_words=MAX_NB_WORDS)
@@ -198,4 +198,4 @@ What has remained to do is deriving attention weights so that we can visualize t
 Full source code is in [my repository in github](https://github.com/richliao/textClassifier/blob/master/textClassifierHATT.py).
 
 ## Conclusion ##
-The result is a bit disappointed. I couldn't achieve a better accuracy although the training time is much faster, comparing to different approaches from using convolutional, bidirectional RNN, to one level attention network. Maybe the dataset is too small for Hierarchical attention network to be powerful. Please contact me or comment below if I have made any mistaken in the exercise or anything I can improve. Thank you!
+The result is a bit disappointed. I couldn't achieve a better accuracy although the training time is much faster, comparing to different approaches from using convolutional, bidirectional RNN, to one level attention network. Maybe the dataset is too small for Hierarchical attention network to be powerful. However, given the potential power of explaining the importance of words and sentences, Hierarchical attention network could have the potential to be the best text classification method. At last, please contact me or comment below if I have made any mistaken in the exercise or anything I can improve. Thank you!
