@@ -7,7 +7,8 @@ categories: supervised classification
 ---
 
 Text classification is a very classical problem. The goal is to classify documents into a fixed number of predefined categories, given a variable length of text bodies. It is widely use in sentimental analysis (IMDB, YELP reviews classification), stock market sentimental analysis, to GOOGLE's smart email reply. This is a very active research area both in academia and industry. In the following series of posts, I will try to present a few different approaches and compare their performances. Ultimately, the goal for me is to implement the paper [Hierarchical Attention Networks for Document Classification](https://www.cs.cmu.edu/~diyiy/docs/naacl16.pdf).
-Given the limitation of data set I have, all exercises are based on Kaggle's IMDB dataset. And implementation are all based on Keras.
+
+Given the limitation of data set I have, all exercises are based on Kaggle's [IMDB dataset](https://www.kaggle.com/c/word2vec-nlp-tutorial/data). And implementation are all based on Keras.
 
 ## Text classification using CNN ##
 

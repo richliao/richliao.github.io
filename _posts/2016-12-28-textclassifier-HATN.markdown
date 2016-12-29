@@ -6,7 +6,9 @@ date: "2016-12-26 16:35:30 -0500"
 categories: supervised classification
 ---
 
-After the exercise of building convolutional, RNN, one level attention RNN, finally I have come to implement [Hierarchical Attention Networks for Document Classification](https://www.cs.cmu.edu/~diyiy/docs/naacl16.pdf). I'm very thankful to Keras, which make building this project painless. The custom layer is very powerful and flexible to build your custom logic to embed into the existing frame work. Functional API makes the Hierarchical InputLayers very easy to implement.
+After the exercise of building convolutional, RNN, sentence level attention RNN, finally I have come to implement [Hierarchical Attention Networks for Document Classification](https://www.cs.cmu.edu/~diyiy/docs/naacl16.pdf). I'm very thankful to Keras, which make building this project painless. The custom layer is very powerful and flexible to build your custom logic to embed into the existing frame work. Functional API makes the Hierarchical InputLayers very easy to implement.
+
+Please note that all exercises are based on Kaggle's [IMDB dataset](https://www.kaggle.com/c/word2vec-nlp-tutorial/data).
 
 ## Text classification using Hierarchical LSTM ##
 

@@ -1,13 +1,15 @@
 ---
 layout: post
 comments: true
-title: "Text Classification, Part 2 - one level Attentional RNN"
+title: "Text Classification, Part 2 - sentence level Attentional RNN"
 date: "2016-12-26 16:35:30 -0500"
 categories: supervised classification
 ---
 
 In the second post, I will try to tackle the problem by using recurrent neural network and attention based LSTM encoder. Further, to make one step closer to implement [Hierarchical Attention Networks for Document Classification](https://www.cs.cmu.edu/~diyiy/docs/naacl16.pdf), I will implement an Attention Network
 on top of LSTM/GRU for the classification task.
+
+Please note that all exercises are based on Kaggle's [IMDB dataset](https://www.kaggle.com/c/word2vec-nlp-tutorial/data). And implementation are all based on Keras
 
 ## Text classification using LSTM ##
 
