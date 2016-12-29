@@ -232,7 +232,10 @@ As you can see, the result slighly improved to **90.3%**
 
 To achieve the best performances, we can
 1) fine tune hyper parameters
-2) further improve text preprocessing.
+2) further improve text preprocessing
+3) use drop out layer
+
+Full source code is in [my repository in github](https://github.com/richliao/textClassifier/blob/master/textClassifierConv.py).
 
 ## Conclusion ##
 Based on the observation, the complexity of convolutional neural network doesn't seem to improve performance, at least using this small dataset. We might be able to see performance improvement using larger dataset, which I won't be able to verify here. One observation I have is allowing the embedding layer training or not does improve the performance, also using pretrained Google Glove word vectors. In both cases, I can see performance improved from 82% to close to 90%.

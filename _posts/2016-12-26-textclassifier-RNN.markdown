@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Text Classification, Part 2 - one layer Attention RNN"
+title: "Text Classification, Part 2 - one level Attentional RNN"
 date: "2016-12-26 16:35:30 -0500"
 categories: supervised classification
 ---
@@ -11,7 +11,7 @@ on top of LSTM/GRU for the classification task.
 
 ## Text classification using LSTM ##
 
-By using LSTM encoder, we intent to encode all information of the text in the last layer output of recurrent neural network before running feed forward network for classification. This is very similar to neural translation machine and sequence to sequence learning. See the following figure that came from  [A Hierarchical Neural Autoencoder for Paragraphs and Documents](https://arxiv.org/pdf/1506.01057v2.pdf).
+By using LSTM encoder, we intent to encode all information of the text in the last output of recurrent neural network before running feed forward network for classification. This is very similar to neural translation machine and sequence to sequence learning. See the following figure that came from  [A Hierarchical Neural Autoencoder for Paragraphs and Documents](https://arxiv.org/pdf/1506.01057v2.pdf).
 
 {% include image.html url="/images/Standard_Seq2Seq.png" description="" %}
 
@@ -89,7 +89,7 @@ class AttLayer(Layer):
     def __init__(self, **kwargs):
         self.init = initializations.get('normal')
         #self.input_spec = [InputSpec(ndim=3)]
-        super(AttLayer, self).__init__(**kwargs)
+        super(AttLayer, self).__init__(** kwargs)
 
     def build(self, input_shape):
         assert len(input_shape)==3
@@ -193,5 +193,7 @@ To achieve the best performances, we may
 2) further improve text preprocessing.
 3) apply drop out layer
 
+Full source code is in [my repository in github](https://github.com/richliao/textClassifier/blob/master/textClassifierRNN.py).
+
 ## Conclusion ##
-Based on the observations, performances of both approaches are quite good. Long sentence sequence trainings are quite slow, in both approaches, training time took more than 15 minutes for each epoch. 
+Based on the observations, performances of both approaches are quite good. Long sentence sequence trainings are quite slow, in both approaches, training time took more than 15 minutes for each epoch.
