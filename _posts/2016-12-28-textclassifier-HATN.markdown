@@ -197,5 +197,7 @@ What has remained to do is deriving attention weights so that we can visualize t
 
 Full source code is in [my repository in github](https://github.com/richliao/textClassifier/blob/master/textClassifierHATT.py).
 
+Also see the [Keras group discussion](https://groups.google.com/forum/#!topic/keras-users/IWK9opMFavQ) about this implementation
+
 ## Conclusion ##
-The result is a bit disappointed. I couldn't achieve a better accuracy although the training time is much faster, comparing to different approaches from using convolutional, bidirectional RNN, to one level attention network. Maybe the dataset is too small for Hierarchical attention network to be powerful. However, given the potential power of explaining the importance of words and sentences, Hierarchical attention network could have the potential to be the best text classification method. At last, please contact me or comment below if I have made any mistaken in the exercise or anything I can improve. Thank you!
+The result is a bit disappointing. I couldn't achieve a better accuracy although the training time is much faster, comparing to different approaches from using convolutional, bidirectional RNN, to one level attention network. Maybe the dataset is too small for Hierarchical attention network to be powerful. However, given the potential power of explaining the importance of words and sentences, Hierarchical attention network could have the potential to be the best text classification method. At last, please contact me or comment below if I have made any mistaken in the exercise or anything I can improve. Thank you!
