@@ -13,15 +13,15 @@ The dataset contains 188 faces and sketches combined. I have trained the model b
 <table>
 <tr><th>name</th><th>input</th><th>output</th><th>target</th></tr>
 <tr><td>f005</td><td><img src='/images/f005-inputs.png'></td><td><img src='/images/f005-outputs.png'></td><td><img src='/images/f005-targets.png'></td></tr>
-<tr><td>f006</td><td><img src='images/f006-inputs.png'></td><td><img src='images/f006-outputs.png'></td><td><img src='images/f006-targets.png'></td></tr>
-<tr><td>f007</td><td><img src='images/f007-inputs.png'></td><td><img src='images/f007-outputs.png'></td><td><img src='images/f007-targets.png'></td></tr>
+<tr><td>f006</td><td><img src='/images/f006-inputs.png'></td><td><img src='/images/f006-outputs.png'></td><td><img src='/images/f006-targets.png'></td></tr>
+<tr><td>f007</td><td><img src='/images/f007-inputs.png'></td><td><img src='/images/f007-outputs.png'></td><td><img src='/images/f007-targets.png'></td></tr>
 </table>
 
 The following two additional test results are quite interesting. The test data comes from XM2GTS data set. I have manually downloaded two pairs of faces and sketches from the front page of CUHK face database. Since the model has only trained on data set based on CUHK students who are mainly Asian, the outputs also look asian, which are quite differen than the target images. However, if you look carefully, the generated images do resemble sketch faces very well.
 <table>
 <tr><th>name</th><th>input</th><th>output</th><th>target</th></tr>
-<tr><td>Test1</td><td><img src='images/Test1-inputs.png'></td><td><img src='images/Test1-outputs.png'></td><td><img src='images/Test1-targets.png'></td></tr>
-<tr><td>Test2</td><td><img src='images/Test2-inputs.png'></td><td><img src='images/Test2-outputs.png'></td><td><img src='images/Test2-targets.png'></td></tr>
+<tr><td>Test1</td><td><img src='/images/Test1-inputs.png'></td><td><img src='/images/Test1-outputs.png'></td><td><img src='/images/Test1-targets.png'></td></tr>
+<tr><td>Test2</td><td><img src='/images/Test2-inputs.png'></td><td><img src='/images/Test2-outputs.png'></td><td><img src='/images/Test2-targets.png'></td></tr>
 </table>
 
 For those interested in playing with the data, I have uploaded clean data in the sketches folder. You can follow the exact commands as written in the original author's blog.
