@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "Text Classification, Part 3 - Hierarchical attention network"
 date: "2016-12-26 16:35:30 -0500"
+disqus_identifier: richliao.github.io.HATN
 categories: supervised classification
 ---
 

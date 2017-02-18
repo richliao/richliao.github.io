@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pix2Pix image translation using conditional adversarial network - sketch to face"
+disqus_identifier: richliao.github.io.pix2pix
 date: "2017-02-16 21:42:11 -0500"
 ---
 

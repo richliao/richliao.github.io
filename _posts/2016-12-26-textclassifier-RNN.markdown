@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "Text Classification, Part 2 - sentence level Attentional RNN"
 date: "2016-12-26 16:35:30 -0500"
+disqus_identifier: richliao.github.io.RNN
 categories: supervised classification
 ---
 
