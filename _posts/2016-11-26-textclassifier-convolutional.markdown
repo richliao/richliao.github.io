@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Text Classification, Part I - Convolutional Networks"
 date: "2016-11-26 16:35:30 -0500"
-disqus_identifier: richliao.github.io.convolutional
+disqus_identifier: convolutional
 categories: supervised classification
 ---
 
