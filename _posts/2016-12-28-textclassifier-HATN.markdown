@@ -214,7 +214,7 @@ Took couple hours and tried to solve the long due attention weight visualization
 1. Define a K.function and derive GRU or whatever layer output before Attention input
 get_layer_output = K.function([model.layers[0].input, K.learning_phase()], [model.layers[2].output])
 test_seq = pad_sequences([sequences[index]], maxlen=MAX_SEQUENCE_LENGTH)
-out = get_3rd_layer_output([test_seq, 0])[0]  # test mode
+out = get_layer_output([test_seq, 0])[0]  # test mode
 print(out[0].shape)
 
 2. Repeat the process in attention weights calculation. 
