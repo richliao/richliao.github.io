@@ -208,3 +208,26 @@ The result is a bit disappointing. I couldn't achieve a better accuracy although
 
 ## Update - 1/11/2017##
 Ben on Keras google group nicely pointed out to me where to download emnlp data. So I have used the same code run against Yelp-2013 dataset. I can't match author's performance. The one level LSTM attention and Hierarchical attention network can only achieve 65%, while BiLSTM achieves roughly 64%. However, I didn't follow exactly author's text preprocessing. I am still using Keras data preprocessing logic that takes top 20,000 or 50,000 tokens, skip the rest and pad remaining with 0. I felt there could be some major improvement in performance if we can do the text processing right, such as replacing time and money to unique tokens and attaching POS information on the sequence etc.
+
+## Update - 6/22/2017##
+Took couple hours and tried to solve the long due attention weight visualization job. The idea is just to do a forward pass. The steps and codes are following:
+1. Define a K.function and derive GRU or whatever layer output before Attention input
+get_layer_output = K.function([model.layers[0].input, K.learning_phase()], [model.layers[2].output])
+test_seq = pad_sequences([sequences[index]], maxlen=MAX_SEQUENCE_LENGTH)
+out = get_3rd_layer_output([test_seq, 0])[0]  # test mode
+print(out[0].shape)
+
+2. Repeat the process in attention weights calculation. 
+eij = np.tanh(np.dot(out[0], att_w[0]))
+ai = np.exp(eij)
+weights = ai/np.sum(ai) 
+
+weights will be the attention weights, the dimension is 1000 for this program. 
+
+3. Now you can get what are the top weights of words
+K = 10 
+topKeys = np.argpartition(weights,-K)[-K:]
+print topKeys
+print test_seq[0][topKeys]
+
+However, the top keywords I am getting are not the desire words I am hopping - some make senses but some don't. I will continue to investigate when time is allowed. Please message me if you observe something wrong. 
