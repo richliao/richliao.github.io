@@ -212,22 +212,27 @@ Ben on Keras google group nicely pointed out to me where to download emnlp data.
 ## Update - 6/22/2017##
 Took couple hours and tried to finish the long due attention weight visualization job. The idea is just to do a forward pass. The steps and codes are following:
 1. Define a K.function and derive GRU or whatever layer output before Attention input
+{% highlight python %}
 get_layer_output = K.function([model.layers[0].input, K.learning_phase()], [model.layers[2].output])
 test_seq = pad_sequences([sequences[index]], maxlen=MAX_SEQUENCE_LENGTH)
 out = get_layer_output([test_seq, 0])[0]  # test mode
 print(out[0].shape)
+{% endhighlight %}
 
 2. Repeat the process in attention weights calculation. 
+{% highlight python %}
 eij = np.tanh(np.dot(out[0], att_w[0]))
 ai = np.exp(eij)
 weights = ai/np.sum(ai)
-
+{% endhighlight %}
 weights will be the attention weights, the dimension is 1000 for this program. 
 
 3. Now you can get what are the top weights of words
+{% highlight python %}
 K = 10
 topKeys = np.argpartition(weights,-K)[-K:]
 print topKeys
 print test_seq[0][topKeys]
+{% endhighlight %}
 
 However, the top keywords I am getting are not the desire words I am hopping - some make senses but some don't. I will continue to investigate when time is allowed. Please message me if you observe something wrong. 
